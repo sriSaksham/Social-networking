@@ -18,7 +18,7 @@ const teacherProfileRoutes = require('./routes/teacherProfileRoutes');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
-    origin: "https://social-networking-mu.vercel.app",
+    origin: "https://social-networking-theta.vercel.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }));
@@ -47,7 +47,7 @@ const server = app.listen(PORT, () => {
 const io = require('socket.io')(server, {
   pingTimeout: 60000,
   cors: {
-    orgin: "https://social-networking-mu.vercel.app"
+    orgin: "https://social-networking-theta.vercel.app/"
   }
 })
 
