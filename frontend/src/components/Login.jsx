@@ -5,6 +5,7 @@ import Footer from '../partials/Footer';
 import Header from '../partials/Header';
 import srmuLogo2 from '../assets/srmu-logo2.webp';
 import { toast } from 'react-toastify';
+import {Link} from 'react-router-dom';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -74,7 +75,7 @@ const Login = () => {
               </div>
               <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">Login</button>
             </form>
-            <p className="mt-3 text-center text-sm">New User? <a href="/signup" className="text-blue-500 hover:text-blue-700">Signup Here!</a></p>
+            <p className="mt-3 text-center text-sm">New User? </p> <Link to="/signup" className="text-blue-500 hover:text-blue-700">Signup Here!</Link>
           </div>
         </div>
       </div>
