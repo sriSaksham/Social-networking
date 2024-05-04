@@ -47,7 +47,7 @@ const server = app.listen(PORT, () => {
 const io = require('socket.io')(server, {
   pingTimeout: 60000,
   cors: {
-    orgin: "https://social-networking-theta.vercel.app"
+    orgin: "https://social-networking-theta.vercel.app",
   }
 })
 
