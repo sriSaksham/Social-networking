@@ -5,6 +5,7 @@ import Header from '../partials/Header';
 import srmuLogo2 from '../assets/srmu-logo2.webp';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import {Link} from 'react-router-dom';
 
 const Signup = () => {
   const [email, setEmail] = useState('');
@@ -132,7 +133,7 @@ const Signup = () => {
                 <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">Send OTP</button>
               </form>
             )}
-            <p className="mt-3 text-center text-sm">Already have an account? </p><Link to="/login" className="text-blue-500 hover:text-blue-700">Login Here!</Link>
+            <p className="mt-3 text-center text-sm">Already have an account? </p> <Link to="/login" className="text-blue-500 hover:text-blue-700">Login Here!</Link>
           </div>
         </div>
       </div>
